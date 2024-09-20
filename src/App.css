@@ -1,38 +1,188 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Container for the Form Editor */
+  .form-editor {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .add-field-btn {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  /* Form Field Styling */
+  .form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+  }
+  
+  .form-field input,
+  .form-field select {
+    padding: 10px;
+    margin-right: 100px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: #3498db;
+  }
+  
+  .form-field .remove-btn {
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-field label {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  
+  /* Form Preview Styles */
+  .form-preview {
+    margin-top: 40px;
+
+    padding: 30px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dfe6e9;
+  }
+  
+  .form-preview h3 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 20px;
+  }
+  
+  .form-preview .preview-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-preview label {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .form-preview input,
+  .form-preview select {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-preview input:focus,
+  .form-preview select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+  }
+  
+  .form-preview input::placeholder {
+    color: #95a5a6;
+    font-style: italic;
+  }
+  
+  .form-preview select {
+    background-color: #fff;
+  }
+  
+  .form-preview .preview-field:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  /* Add subtle hover effect to inputs */
+  .form-preview input:hover,
+  .form-preview select:hover {
+    border-color: #2980b9;
+  }
+  
+  /* Style for disabled fields */
+  .form-preview input[disabled],
+  .form-preview select[disabled] {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design for Form Fields and Preview */
+  @media (max-width: 768px) {
+    .form-field {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-field input,
+    .form-field select {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+
+  
+    .form-preview input,
+    .form-preview select {
+      padding: 10px;
+    }
   }
 }
