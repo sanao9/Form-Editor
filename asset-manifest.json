@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Metana-Form-Editor/static/css/main.298f5c14.css",
+    "main.js": "/Metana-Form-Editor/static/js/main.dbb1b629.js",
+    "static/js/453.3be77f59.chunk.js": "/Metana-Form-Editor/static/js/453.3be77f59.chunk.js",
+    "index.html": "/Metana-Form-Editor/index.html",
+    "main.298f5c14.css.map": "/Metana-Form-Editor/static/css/main.298f5c14.css.map",
+    "main.dbb1b629.js.map": "/Metana-Form-Editor/static/js/main.dbb1b629.js.map",
+    "453.3be77f59.chunk.js.map": "/Metana-Form-Editor/static/js/453.3be77f59.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.298f5c14.css",
+    "static/js/main.dbb1b629.js"
+  ]
+}
